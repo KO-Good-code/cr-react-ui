@@ -9,11 +9,12 @@
   "description": "neigri个人react-UI",
   "author": "neigri",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.dev.config.js",
-    "dev": "webpack-dev-server --config webpack.dev.config.js",
-    "build": "webpack --config webpack.prod.config.js"
+    "start": "webpack-dev-server --config config/webpack.dev.config.js",
+    "dev": "webpack-dev-server --config config/webpack.dev.config.js",
+    "build": "webpack --config config/webpack.prod.config.js"
   },
   "dependencies": {
+    "cr-react-ui": "^1.0.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
   },

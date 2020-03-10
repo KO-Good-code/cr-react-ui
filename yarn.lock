@@ -1826,6 +1826,14 @@ core-util-is@1.0.2, core-util-is@~1.0.0:
   resolved "https://registry.npm.taobao.org/core-util-is/download/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
   integrity sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
 
+cr-react-ui@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npm.taobao.org/cr-react-ui/download/cr-react-ui-1.0.0.tgz?cache=0&sync_timestamp=1583851651923&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcr-react-ui%2Fdownload%2Fcr-react-ui-1.0.0.tgz#f0e7ac0e29cfbcfac23f3e142cc98772aaa38ada"
+  integrity sha1-8OesDinPvPrCPz4ULMmHcqqjito=
+  dependencies:
+    react "^16.13.0"
+    react-dom "^16.13.0"
+
 create-ecdh@^4.0.0:
   version "4.0.3"
   resolved "https://registry.npm.taobao.org/create-ecdh/download/create-ecdh-4.0.3.tgz#c9111b6f33045c4697f144787f9254cdc77c45ff"
