@@ -1,12 +1,13 @@
 const path = require('path');
-const htmlWebpackPlugin = require('html-webpack-plugin');
+const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
-  mode: 'development',
-  entry: './src/index.js',
+  mode: 'production',
+  entry: './src',
   output: {
     filename: 'index.js',
-    path: path.resolve(__dirname, '../dist'),
+    path: path.resolve(__dirname, '../lib'),
+    libraryTarget: 'commonjs2'
   },
   module: {
     rules: [
@@ -25,12 +26,5 @@ module.exports = {
       }
     ]
   },
-  devServer: {
-    contentBase: './dist'
-  },
-  plugins: [
-    // new htmlWebpackPlugin({
-    //   template: 'public/index.html'
-    // })
-  ],
+  externals: [nodeExternals()]
 };

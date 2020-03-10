@@ -1826,11 +1826,12 @@ core-util-is@1.0.2, core-util-is@~1.0.0:
   resolved "https://registry.npm.taobao.org/core-util-is/download/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
   integrity sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
 
-cr-react-ui@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npm.taobao.org/cr-react-ui/download/cr-react-ui-1.0.0.tgz?cache=0&sync_timestamp=1583851651923&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcr-react-ui%2Fdownload%2Fcr-react-ui-1.0.0.tgz#f0e7ac0e29cfbcfac23f3e142cc98772aaa38ada"
-  integrity sha1-8OesDinPvPrCPz4ULMmHcqqjito=
+cr-react-ui@^1.0.3, cr-react-ui@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.npm.taobao.org/cr-react-ui/download/cr-react-ui-1.0.4.tgz#66638d4e681d6a198540849f6d890975ca10e8d1"
+  integrity sha1-ZmONTmgdahmFQISfbYkJdcoQ6NE=
   dependencies:
+    cr-react-ui "^1.0.3"
     react "^16.13.0"
     react-dom "^16.13.0"
 
@@ -6078,6 +6079,11 @@ webpack-merge@^4.2.2:
   integrity sha1-onxS6ng9E5iv0gh/VH17nS9DY00=
   dependencies:
     lodash "^4.17.15"
+
+webpack-node-externals@^1.7.2:
+  version "1.7.2"
+  resolved "https://registry.npm.taobao.org/webpack-node-externals/download/webpack-node-externals-1.7.2.tgz#6e1ee79ac67c070402ba700ef033a9b8d52ac4e3"
+  integrity sha1-bh7nmsZ8BwQCunAO8DOpuNUqxOM=
 
 webpack-sources@^1.1.0, webpack-sources@^1.4.0, webpack-sources@^1.4.1:
   version "1.4.3"

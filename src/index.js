@@ -1,19 +1,24 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import ReactDom from 'react-dom'
 // import './assets/scss'; // 使用less的情况
-// import Mod from 'cr-react-ui'
+import App from 'cr-react-ui'
 
-function App(){
+function Apps(){
 
   const app = 123456
 
+
+  useEffect(() => {
+    console.log(App)
+  })
+
   return  (
     <div>
-      {/* <Mod /> */}
-      123456789
+      <App />
+      {app}
     </div>
   )
 }
 
 
-export default App
+export default Apps
