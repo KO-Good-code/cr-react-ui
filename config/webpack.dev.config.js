@@ -1,36 +1,25 @@
 const path = require('path');
+const merge = require('webpack-merge');
+const config = require('./webpack.config')
 const htmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = {
+module.exports = merge(config,{
   mode: 'development',
   entry: './main.js',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, '../dist'),
   },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        use: 'babel-loader',
-        exclude: /node_modules/
-      },
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader']
-      },
-      {
-        test: /\.cm\.styl$/,
-        loader: 'style-loader!css-loader?modules&camelCase&localIdentName=[local]-[hash:base64:5]!stylus-loader'
-      }
-    ]
-  },
+  devtool: 'cheap-module-source-map',
   devServer: {
     contentBase: './dist'
+  },
+  resolve: {
+    extensions: ['.js', '.jsx']
   },
   plugins: [
     new htmlWebpackPlugin({
       template: 'public/index.html'
     })
   ],
-};
+}) 

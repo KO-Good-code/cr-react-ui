@@ -1,30 +1,15 @@
 const path = require('path');
 const nodeExternals = require('webpack-node-externals');
+const merge = require('webpack-merge');
+const config = require('./webpack.config');
 
-module.exports = {
+module.exports = merge(config, {
   mode: 'production',
   entry: './src',
   output: {
     filename: 'index.js',
     path: path.resolve(__dirname, '../lib'),
-    libraryTarget: 'commonjs2'
-  },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        use: 'babel-loader',
-        exclude: /node_modules/
-      },
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader']
-      },
-      {
-        test: /\.cm\.styl$/,
-        loader: 'style-loader!css-loader?modules&camelCase&localIdentName=[local]-[hash:base64:5]!stylus-loader'
-      }
-    ]
+    libraryTarget: 'umd'
   },
   externals: [nodeExternals()]
-};
+}) ;
