@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import ReactDom from 'react-dom';
-import { Model } from './src';
-// import { Model } from 'cr-react-ui';
+// import { Model } from './src';
+import  {Model}  from 'cr-react-ui';
 
 function App(param) { 
 

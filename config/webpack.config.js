@@ -17,17 +17,26 @@ module.exports = {
         test: /\.scss$/, 
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'] 
       },
-      { test: /\.(jpg|png|gif|bmp|jpeg)$/, use: 'file-loader?limit=5000' },
+      { 
+        test: /\.(jpg|png|gif|bmp|jpeg)$/, 
+        loader: 'file-loader',
+        options: {
+          name: "images/[name].[ext]"
+        }
+      },
     ]
   },
   plugins: [ 
     new MiniCssExtractPlugin({
-      filename: "./css/styles.css", //如果需要将css文件单独放入css文件夹中需要../
-      options: {
-        assetsRoot: path.resolve(__dirname, '../dist')
-      }
+      moduleFilename: ({name}) => {
+        if ( name === 'index') {
+          return '[name].css'
+        }
+        return '[name]/index.css'
+      }, //如果需要将css文件单独放入css文件夹中需要../
     })
   ],
+  
   resolve: {
     extensions: ['.js', '.jsx'],
     alias: {
