@@ -1,9 +1,12 @@
 import Model from '@/components/Model'
+import Drawer from '@/components/Drawer'
 
 export {
-  Model
+  Model,
+  Drawer
 }
 
 export default {
-  Model
+  Model,
+  Drawer
 }
