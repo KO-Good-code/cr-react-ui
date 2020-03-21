@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import ReactDom from 'react-dom';
-import { Model, Drawer } from './src';
-import '@/assets/scss/main.scss'
-// import  {Model}  from 'cr-react-ui';
+// import { Model, Drawer } from './src';
+// import '@/assets/scss/main.scss'
+import  {Model, Drawer }  from 'cr-react-ui';
+import 'cr-react-ui/lib/index.css'
 
 function App(param) { 
 

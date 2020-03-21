@@ -4,12 +4,20 @@ const merge = require('webpack-merge');
 const config = require('./webpack.config');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
+const entryList = () => {
+  const list = ['Model', 'Drawer']
+  let result = {
+    "index": './src'
+  }
+  list.forEach( i => {
+    result[i] = `./src/components/${i}`
+  })
+  return result;
+}
+
 module.exports = merge(config, {
   mode: 'production',
-  entry: {
-    "index":'./src/index.js',
-    "Model": './src/components/Model'
-  },
+  entry: entryList(),
   externals: { // 定义外部依赖，避免把react和react-dom打包进去
     react: {
       root: "React",

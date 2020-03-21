@@ -25,7 +25,7 @@ function Model (props){
   const modal = (
     <div ref={modelDom} className="cr-Model" style={{zIndex}}>
       <div ref={maskDom} className={`cr-model-mask fade-into`}></div>
-      <div ref={conterDom} className="cr-model-conter fade-into" onClick={ () => !maskClosable && onCancel()}>
+      <div ref={conterDom} className="cr-model-conter fade-into" onClick={ () => maskClosable && onCancel()}>
         <div className="cr-model-body" onClick={stop}>
           <span className="cr-model-close" onClick={onCancel}>x</span>
           {children}
