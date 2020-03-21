@@ -92,6 +92,6 @@ import { Drawer } from 'cr-react-ui'
 | maskClosable | 点击蒙层是否允许关闭  | boolean | false  |
 | zIndex | 设置 Modal 的 z-index  | Number | 1000  |
 | onCancel | 点击遮罩层或右上角叉或取消按钮的回调  | function(e) | - |
-| position | 抽屉的方向  | top | right | bottom | left | top |
+| position | 抽屉的方向  | top|right|bottom|left | top |
 
 
