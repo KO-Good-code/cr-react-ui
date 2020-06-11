@@ -5,7 +5,7 @@ const config = require('./webpack.config');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const entryList = () => {
-  const list = ['Model', 'Drawer']
+  const list = ['Model', 'Drawer', 'Toast']
   let result = {
     "index": './src'
   }

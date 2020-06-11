@@ -1,6 +1,6 @@
 {
   "name": "cr-react-ui",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "lib/index",
   "files": [
     "lib"

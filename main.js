@@ -1,9 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import ReactDom from 'react-dom';
-// import { Model, Drawer } from './src';
+import { Model, Drawer, Toast } from './src';
 // import '@/assets/scss/main.scss'
-import  {Model, Drawer }  from 'cr-react-ui';
-import 'cr-react-ui/lib/index.css'
+// import  {Model, Drawer, Toast }  from 'cr-react-ui';
+// import 'cr-react-ui/lib/index.css'
+
+// const toast = new Toast();
 
 function App(param) { 
 
@@ -12,15 +14,17 @@ function App(param) {
 
   return (
     <div className="main">
-      <div onClick={() => set(true)}>click</div>
+      <div onClick={() => {
+        Toast.warning('1111')
+      }}>click</div>
       <div onClick={() => set1(true)}>click</div>
-      <Model  visvble={visvble} onCancel={() =>set(false)}>
+      {/* <Model  visvble={visvble} onCancel={() =>set(false)}>
         <div className="box">
         </div>
       </Model>
       <Drawer visvble={visvble1} zIndex={1001} onCancel={() =>set1(false)}>
         <div className="box"></div>
-      </Drawer>
+      </Drawer> */}
     </div>
   )
  }

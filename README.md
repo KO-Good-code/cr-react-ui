@@ -77,7 +77,7 @@ import { Model } from 'cr-react-ui'
 | zIndex | 设置 Modal 的 z-index  | Number | 1000  |
 | onCancel | 点击遮罩层或右上角叉或取消按钮的回调  | function(e) | - |
 
-### 1.抽屉 Drawer
+### 2.抽屉 Drawer
 ```js
 import { Drawer } from 'cr-react-ui'
 
@@ -93,5 +93,15 @@ import { Drawer } from 'cr-react-ui'
 | zIndex | 设置 Modal 的 z-index  | Number | 1000  |
 | onCancel | 点击遮罩层或右上角叉或取消按钮的回调  | function(e) | - |
 | position | 抽屉的方向  | top right bottom left | top |
+
+### 3.消息提示 Toast
+```js
+import { Toast } from 'cr-react-ui'
+
+Toast.warning(text) 警告消息
+Toast.error(text)  错误消息
+Toast.success(text) 成功消息
+
+```
 
 
