@@ -2,7 +2,7 @@ Arguments:
   C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js publish
 
 PATH: 
-  C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\NetSarang\Xftp 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\TortoiseSVN\bin;C:\Users\admin\AppData\Local\Yarn\bin;D:\jx_win64v8;C:\Users\chenrui\AppData\Roaming\npm\node_modules\@tarojs\cli\bin;C:\Users\chenrui\AppData\Local\Microsoft\WindowsApps;E:\Microsoft VS Code\bin;C:\Users\chenrui\AppData\Roaming\npm\node_modules\@tarojs\cli\bin;
+  C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\NetSarang\Xftp 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\TortoiseSVN\bin;C:\Users\admin\AppData\Local\Yarn\bin;D:\jx_win64v8;C:\Users\chenrui\AppData\Local\Yarn\bin;C:\Users\chenrui\AppData\Local\Microsoft\WindowsApps;E:\Microsoft VS Code\bin;
 
 Yarn version: 
   1.16.0
@@ -14,13 +14,13 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: connect ETIMEDOUT 104.16.20.35:443
+  Error: connect ETIMEDOUT 104.16.23.35:443
       at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1097:14)
 
 npm manifest: 
   {
     "name": "cr-react-ui",
-    "version": "1.0.6",
+    "version": "1.0.8",
     "main": "lib/index",
     "files": [
       "lib"

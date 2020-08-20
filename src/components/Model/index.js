@@ -5,7 +5,7 @@ import './model.scss';
 
 function Model (props){
 
-  let { children, visvble, onCancel, zIndex, maskClosable = false } = props;
+  let { children, visvble, onCancel, zIndex, maskClosable = false, destroy = false } = props;
 
   //  主要div
   let ref = useRef(null);
@@ -45,6 +45,7 @@ function Model (props){
           conterDom.current.classList.add('fade-out');
         }, 100)
       }else {
+        ReactDom.render(modal, ref.current);
         maskDom.current.classList.remove('cr-modal-mask-hidden');
         conterDom.current.classList.remove('cr-modal-mask-hidden');
         setTimeout( () => {
@@ -59,6 +60,10 @@ function Model (props){
         setTimeout( () => {
           maskDom.current.classList.add('cr-modal-mask-hidden');
           conterDom.current.classList.add('cr-modal-mask-hidden');
+          if(destroy){
+            document.body.removeChild(ref.current);
+            ref.current = null;
+          }
         }, 500)
       }
     }
